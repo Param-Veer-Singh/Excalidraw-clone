@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=DM+Sans:ital,opsz,wght@1,9..40,200&family=Fasthand&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200;400&family=Roboto:ital,wght@0,400;1,100&family=Source+Code+Pro:ital,wght@0,400;1,200&display=swap");
+@font-face {
+    font-family:myFont ;
+    src: url(VirgilRegular.otf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+nav{
+    position: static !important;
+    top: 0px;
+    z-index: 10;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-div{
+    background-color: transparent;
+    position: static !important;
+    bottom: 0px;
+    z-index: 10;
+}
+main{
+    font-family: ;
+    width: 100vw;
+    height: 75vh;
+    overflow-y: scroll !important;
+}
+.button-div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.button-div:hover{
+    background-color:#ebebeb ;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.tools{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 15px !important;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px #ebebeb;
+}
+.right-btns{
+    display: flex;
+    align-items: center;
+}
+.tools input[type="radio"], .tools input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    height: 1em;
+    width: 1em;
+}
+button:hover{
+    background-color: #ebebeb !important;
+}
+.live-colab-btn{
+    background-color: #5b57d1 !important;
+}
+.live-colab-btn:hover{
+    background-color: #4a47b1 !important;
+}
+.tools label:hover{
+    cursor: pointer;
+    padding-block: 10px;
+    border-radius: 10px;
+    background-color: #ebebeb;
+}
+.tools label:checked{
+    cursor: pointer;
+    background-color: blue;
+}
+
+.tools label {
+    display: inline-block;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.button-div>button{
+    border: none !important;
+}
+.logo>img{
+    height: 100px;
+}
+
+.zoom-btns, .undo-redo-btns{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #d6d6d6 !important;
+}
+.more-btn{
+    border: none !important;
+}
+button{
+    border: 1px solid #d6d6d6 !important;
+    background-color: transparent !important;
+    border: none;
+    /* color: black !important; */
+}
+.zoom-out-btn, .undo{
+    background-color: transparent;
+    border: none !important;
+    border-right: 1px solid #d6d6d6 !important;
+    border-radius: 0px !important;
+}
+.zoom-in-btn, .redo{
+    background-color: transparent;
+    border: none !important;
+    border-left: 1px solid #d6d6d6 !important;
+    border-radius: 0px !important;
+}
+.reset-btn{
+    border: none !important;
+    /* border-radius: 0px !important; */
+}
+.footer-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-830px{
+    display: none;
+}
+@media screen and (max-width:830px) {
+    .left-btns{
+        display: none !important;
+    }
+    .right-btns{
+        display: none !important
+    }
+    nav{
+        margin-left: 20px;
+        justify-content: center !important;
+    }
+    .footer-div{
+        display: none;
+    }
+    .footer-830px{
+        height: 50px;
+        width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px !important;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px #ebebeb;
+    }
+    .undo, .redo, .menu-btn{
+        border: none !important;
+    }
+}
