@@ -8,8 +8,18 @@
   margin: 0px;
   padding: 0px;
 }
-nav{
-    position: static !important;
+.root{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+#canvas{
+    /* background-color: yellow !important; */
+}
+.navbar{
+    width: 100vw;
+    position: absolute !important;
     top: 0px;
     z-index: 10;
     background-color: transparent;
@@ -17,18 +27,37 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px;
 }
 .footer-div{
+    width: 100vw;
+    padding: 10px;
     background-color: transparent;
-    position: static !important;
+    position: absolute !important;
     bottom: 0px;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-main{
-    font-family: ;
+.main-div{
     width: 100vw;
     height: 75vh;
     overflow-y: scroll !important;
+}
+.tool-btns > input{
+    display: none;
+}
+.tool-btns input:checked + .tool-btn{
+    background-color: #5b57d1;
+    color: blue;
+    border-radius: 10px;
+}
+.tool-btn, .lock-tool{
+   padding: 10px;
+   margin-inline: 2px;
+
 }
 .button-div{
     padding: 10px;
@@ -49,6 +78,7 @@ main{
     align-items: center;
     justify-content: space-between;
     width: fit-content;
+    margin-inline: 2px;
     padding: 15px !important;
     border-radius: 15px;
     box-shadow: 0px 0px 15px #ebebeb;
@@ -74,19 +104,17 @@ button:hover{
 }
 .tools label:hover{
     cursor: pointer;
-    padding-block: 10px;
-    border-radius: 10px;
     background-color: #ebebeb;
+    border-radius: 10px;
 }
-.tools label:checked{
+/* .tools label:checked{
     cursor: pointer;
     background-color: blue;
-}
+} */
 
 .tools label {
     display: inline-block;
     background-color: transparent;
-    padding: 15px;
 }
 
 .main-div{
@@ -133,12 +161,7 @@ button{
     border: none !important;
     /* border-radius: 0px !important; */
 }
-.footer-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 .footer-830px{
     display: none;
 }
@@ -149,7 +172,7 @@ button{
     .right-btns{
         display: none !important
     }
-    nav{
+    .navbar{
         margin-left: 20px;
         justify-content: center !important;
     }
@@ -157,9 +180,12 @@ button{
         display: none;
     }
     .footer-830px{
+        bottom: 90px;
         height: 50px;
-        width: 90vw;
+        width: 100vw;
+        position: relative;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         padding: 15px !important;
