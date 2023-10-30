@@ -73,6 +73,7 @@
     display: none;
 }
 .tools{
+    background-color: white;
     height: 50px;
     display: flex;
     align-items: center;
@@ -132,7 +133,7 @@ button:hover{
 }
 
 .zoom-btns, .undo-redo-btns{
-    background-color: transparent;
+    background-color: white;
     border-radius: 10px;
     border: 1px solid #d6d6d6 !important;
 }
@@ -141,7 +142,7 @@ button:hover{
 }
 button{
     border: 1px solid #d6d6d6 !important;
-    background-color: transparent !important;
+    background-color: white !important;
     border: none;
     /* color: black !important; */
 }
@@ -149,13 +150,13 @@ button{
     background-color: transparent;
     border: none !important;
     border-right: 1px solid #d6d6d6 !important;
-    border-radius: 0px !important;
+    border-radius: 10px !important;
 }
 .zoom-in-btn, .redo{
     background-color: transparent;
     border: none !important;
     border-left: 1px solid #d6d6d6 !important;
-    border-radius: 0px !important;
+    border-radius: 10px !important;
 }
 .reset-btn{
     border: none !important;
